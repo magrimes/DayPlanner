@@ -48,15 +48,16 @@ Below are examples of code from each file created for the application:
 
 * HTML
 
-<img src=" " width=600>
+<img src="images\BG-HW5.jpg" width=600>
 
 * CSS
 
-<img src=" " width=600>
+<img src="images\CSS Screenshot-HW5.png" width=600>
 
 * JavaScript
 
-<img src=" " width=600>
+<img src="images\JS Screenshot-HW5.png" width=600>
+<img src="images\JS2 Screenshot-HW5.png" width=600>
 
 ## Credits
 
