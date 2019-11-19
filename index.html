@@ -139,86 +139,6 @@
 
     <script>
 
-        var NineAM = $("#input9")
-        var TenAM = $("#input10")
-        var ElevenAM = $("#input11")
-        var TwelvePM = $("#input12")
-        var OnePM = $("#input1")
-        var TwoPM = $("#input2")
-        var ThreePM = $("#input3")
-        var FourPM = $("#input4")
-        var FivePM = $("#input5")
-
-        var dateE1 = $("#currentDay")
-        var date = new Date();
-        date = moment().format("LL");
-        var date1 = moment().format("h A")
-        console.log(date1)
-        dateE1.text(date);
-
-        if (date1 === "9 AM") {
-            NineAM.addClass("present")
-        }
-        else {
-            NineAM.addClass("future")
-        }
-
-        if (date1 === "10 AM") {
-            TenAM.addClass("present")
-        }
-        else {
-            TenAM.addClass("future")
-        }
-
-        if (date1 === "11 AM") {
-            ElevenAM.addClass("present")
-        }
-        else {
-            ElevenAM.addClass("future")
-        }
-
-        if (date1 === "12 PM") {
-            TwelvePM.addClass("present")
-        }
-        else {
-            TwelvePM.addClass("future")
-        }
-
-        if (date1 === "1 PM") {
-            OnePM.addClass("present")
-        }
-        else {
-            OnePM.addClass("future")
-        }
-
-        if (date1 === "2 PM") {
-            TwoPM.addClass("present")
-        }
-        else {
-            TwoPM.addClass("future")
-        }
-
-        if (date1 === "3 PM") {
-            ThreePM.addClass("present")
-        }
-        else {
-            ThreePM.addClass("future")
-        }
-
-        if (date1 === "4 PM") {
-            FourPM.addClass("present")
-        }
-        else {
-            FourPM.addClass("future")
-        }
-
-        if (date1 === "5 PM") {
-            FivePM.addClass("present")
-        }
-        else {
-            FivePM.addClass("future")
-        }
-
         $(".saveBtn").click(function () {
             var userEvent = $("#input9").val();
             localStorage.setItem("9am", userEvent);
@@ -309,11 +229,180 @@
 
         DisplayEvent5();
 
+        var dateE1 = $("#currentDay")
+        var date = new Date();
+        date = moment().format("LL");
+        var date1 = moment().format("h A")
+        console.log(date1)
+        var NineAM = $("#input9")
+        var TenAM = $("#input10")
+        var ElevenAM = $("#input11")
+        var TwelvePM = $("#input12")
+        var OnePM = $("#input1")
+        var TwoPM = $("#input2")
+        var ThreePM = $("#input3")
+        var FourPM = $("#input4")
+        var FivePM = $("#input5")
+        dateE1.text(date);
+
+        if (date1 === "9 AM") {
+            NineAM.addClass("present")
+        }
+        else {
+            NineAM.addClass("future")
+        }
+
+        if (date1 === "10 AM") {
+            TenAM.addClass("present")
+        }
+        else {
+            TenAM.addClass("future")
+        }
+
+        if (date1 === "11 AM") {
+            ElevenAM.addClass("present")
+        }
+        else {
+            ElevenAM.addClass("future")
+        }
+
+        if (date1 === "12 PM") {
+            TwelvePM.addClass("present")
+        }
+        else {
+            TwelvePM.addClass("future")
+        }
+
+        if (date1 === "1 PM") {
+            OnePM.addClass("present")
+        }
+        else {
+            OnePM.addClass("future")
+        }
+
+        if (date1 === "2 PM") {
+            TwoPM.addClass("present")
+        }
+        else {
+            TwoPM.addClass("future")
+        }
+
+        if (date1 === "3 PM") {
+            ThreePM.addClass("present")
+        }
+        else {
+            ThreePM.addClass("future")
+        }
+
+        if (date1 === "4 PM") {
+            FourPM.addClass("present")
+        }
+        else {
+            FourPM.addClass("future")
+        }
+
+        if (date1 === "5 PM") {
+            FivePM.addClass("present")
+        }
+        else {
+            FivePM.addClass("future")
+        }
+
+        // $(".saveBtn").click(function () {
+        //     var userEvent = $("#input9").val();
+        //     localStorage.setItem("9am", userEvent);
+        // });
+        // function DisplayEvent9() {
+        //     $("#input9").val(localStorage.getItem("9am"))
+        // }
+
+        // DisplayEvent9();
+
+        // $(".saveBtn").click(function () {
+        //     var userEvent = $("#input10").val();
+        //     localStorage.setItem("10am", userEvent);
+        // });
+        // function DisplayEvent10() {
+        //     $("#input10").val(localStorage.getItem("10am"))
+        // }
+
+        // DisplayEvent10();
+
+        // $(".saveBtn").click(function () {
+        //     var userEvent = $("#input11").val();
+        //     localStorage.setItem("11am", userEvent);
+        // });
+        // function DisplayEvent11() {
+        //     $("#input11").val(localStorage.getItem("11am"))
+        // }
+
+        // DisplayEvent11();
+
+        // $(".saveBtn").click(function () {
+        //     var userEvent = $("#input12").val();
+        //     localStorage.setItem("12pm", userEvent);
+        // });
+        // function DisplayEvent12() {
+        //     $("#input12").val(localStorage.getItem("12pm"))
+        // }
+
+        // DisplayEvent12();
+
+        // $(".saveBtn").click(function () {
+        //     var userEvent = $("#input1").val();
+        //     localStorage.setItem("1pm", userEvent);
+        // });
+        // function DisplayEvent1() {
+        //     $("#input1").val(localStorage.getItem("1pm"))
+        // }
+
+        // DisplayEvent1();
+
+        // $(".saveBtn").click(function () {
+        //     var userEvent = $("#input2").val();
+        //     localStorage.setItem("2pm", userEvent);
+        // });
+        // function DisplayEvent2() {
+        //     $("#input2").val(localStorage.getItem("2pm"))
+        // }
+
+        // DisplayEvent2();
+
+        // $(".saveBtn").click(function () {
+        //     var userEvent = $("#input3").val();
+        //     localStorage.setItem("3pm", userEvent);
+        // });
+        // function DisplayEvent3() {
+        //     $("#input3").val(localStorage.getItem("3pm"))
+        // }
+
+        // DisplayEvent3();
+
+        // $(".saveBtn").click(function () {
+        //     var userEvent = $("#input4").val();
+        //     localStorage.setItem("4pm", userEvent);
+        // });
+        // function DisplayEvent4() {
+        //     $("#input4").val(localStorage.getItem("4pm"))
+        // }
+
+        // DisplayEvent4();
+
+        // $(".saveBtn").click(function () {
+        //     var userEvent = $("#input5").val();
+        //     localStorage.setItem("5pm", userEvent);
+        // });
+        // function DisplayEvent5() {
+        //     $("#input5").val(localStorage.getItem("5pm"))
+        // }
+
+        // DisplayEvent5();
+
     </script>
 
-<script src="moment.js" type=“text/javascript”></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="moment.js" type=“text/javascript”> </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 </body>
 
