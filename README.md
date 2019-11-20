@@ -38,8 +38,6 @@ The following code styles are used in the application:
 
 * style.css
 
-* minutes.js
-
 * README.md
 
 ## Screenshots
